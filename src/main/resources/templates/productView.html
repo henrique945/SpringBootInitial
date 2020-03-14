@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View</title>
+</head>
+
+<body>
+    <div style="text-align: center; color: green;">
+        <h1 th:text="'Produto: ' + ${product.codigo}">Produto</h1>
+        <p th:text="'Nome: ' + ${product.nome}"></p>
+        <p th:text="'Valor: ' + ${product.valor}"></p>
+        <p th:text="'Em estoque: ' + ${product.estoque}"></p>
+    </div>
+</body>
+
+</html>

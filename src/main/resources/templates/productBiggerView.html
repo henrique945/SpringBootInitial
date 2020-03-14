@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductBiggerView</title>
+</head>
+
+<body>
+    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; color: green;">
+        <h1 th:text="'Produtos maiores que ' +  ${value}"></h1>
+        <table>
+            <tr th:each="p: ${products}">
+                <td style="padding-right: 1rem;" th:text="${p.codigo}" />
+                <td th:text="${p.nome}" />
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
